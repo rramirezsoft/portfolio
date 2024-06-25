@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>RRamirezSoft</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">RRamirezSoft</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- SECCIO INICIO-->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/round_inmg_perfil.png" alt="" />
+        </div>
+        <h1>RAUL RAMIREZ</h1>
+        <h2>Ingeniero de Software - Experto Backend</h2>
+        <div class="redes">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <a
+            href="https://www.linkedin.com/in/raul-ramirez-adarve/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Raúl Ramírez.</span> Estudiante de tercer año de
+          Ingeniería de Software. Mi fascinación por la programación y las
+          matemáticas me ha llevado a especializarme en ingeniería de datos,
+          explorando el emocionante mundo del big data y la ciencia de datos.
+          ¡Explora mis proyectos y acompáñame en mi viaje por el mundo del
+          desarrollo de software!
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                29/09/2003
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                628736559
+              </li>
+              <li>
+                <strong>Email</strong>
+                rramirezsoft@gmail.com
+              </li>
+              <li>
+                <strong>Dirección</strong>
+                Las Rozas de Madrid, España
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-regular fa-futbol"></i>
+                <span>FUTBOL</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>GYM</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-burger"></i>
+                <span>COMIDA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="cv/cv.pdf" download>
+          <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+
+            <div class="skill">
+              <span>C</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>78%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>C++</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Java</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>MySQL</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>67%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>82%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>96%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Bachillerato tecnológico</h4>
+              <span class="casa">IES Ignacio Echeverría</span>
+              <span class="fecha">2019 - 2021</span>
+              <p>
+                Durante mi bachillerato, me especialicé en asignaturas técnicas
+                y científicas, desarrollando una base sólida en matemáticas y
+                física, además de introducirme en el mundo de la programación y
+                la tecnología.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>
+                Grado Superior en Desarrollo de Aplicaciones Multiplataforma
+              </h4>
+              <span class="casa">Universidad Camilo José Cela</span>
+              <span class="fecha">2021 - 2023</span>
+              <p>
+                El grado superior de DAM me permitió profundizar en el
+                desarrollo de software, aprendiendo a crear aplicaciones para
+                múltiples plataformas. Adquirí habilidades avanzadas en
+                programación en Java, bases de datos y gestión de proyectos.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Ingeniería de Software</h4>
+              <span class="casa">
+                U-tad | Centro Universitario de Tecnología y Arte Digital</span
+              >
+              <span class="fecha">2023 - Actualidad</span>
+              <p>
+                Actualmente, estoy cursando mi tercer año de Ingeniería de
+                Software, donde estoy profundizando en el desarrollo de software
+                a gran escala, la arquitectura de sistemas y la ingeniería de
+                requisitos, preparándome para una carrera como ingeniero de
+                software.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia Laboral</h3>
+            <div class="item der">
+              <h4>Estudiante de Prácticas</h4>
+              <span class="casa">Métrica Consulting SL</span>
+              <span class="fecha">2023</span>
+              <p>
+                Tras finalizar el grado superior de Desarrollo de Aplicaciones
+                Multiplataforma (DAM), tuve la oportunidad de realizar un
+                periodo de prácticas de tres meses en Métrica Consulting.
+                Durante este tiempo, trabajé junto a un equipo experimentado en
+                el desarrollo de un proyecto real. Mis responsabilidades
+                incluyeron la implementación de funcionalidades, la resolución
+                de problemas y la adaptación a la metodología de trabajo ágil
+                Scrum. Estas prácticas no solo me proporcionaron una valiosa
+                experiencia técnica, sino que también me permitieron adquirir
+                habilidades en comunicación, trabajo en equipo y adaptabilidad,
+                preparándome para dar mis primeros pasos en el mundo laboral.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <h3>Reconocimientos y Premios</h3>
+            <div class="item der">
+              <h4>AquaLife</h4>
+              <span class="casa">Universidad Camilo José Cela</span>
+              <span class="fecha">2022</span>
+              <p>
+                Recibí el diploma por el proyecto ganador del Team Project de la
+                UCJC. Mi proyecto, Aqualife, una página web dedicada a la vida
+                marina, fue reconocido como el mejor proyecto del año. Este
+                premio reconoce mi dedicación y esfuerzo en la creación de una
+                plataforma innovadora que explora y celebra la belleza del mundo
+                marino.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/wq.png" alt="" />
+            <div class="overlay">
+              <h3>Wild Quest</h3>
+              <p>Videojuego RPG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form
+              action="https://formsubmit.co/rramirezsoft@gmail.com"
+              method="POST"
+            >
+              <input type="text" name="name" placeholder="Tú Nombre" required />
+              <input
+                type="text"
+                name="telefono"
+                placeholder="Número telefónico"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Dirección de correo"
+                required
+              />
+              <input type="text" name="asunto" placeholder="Tema" required />
+              <textarea
+                name="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+              <button type="submit">
+                Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost/Portfolio/"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+            </form>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Las Rozas de Madrid, España
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Contacto: 628736559
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: rramirezsoft@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a
+          href="https://www.linkedin.com/in/raul-ramirez-adarve/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="#"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
