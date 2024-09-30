@@ -40,5 +40,10 @@ window.onscroll = function(){
     efectoHabilidades();
 } 
 
+// Función para cambiar entre temas
+function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+}
+
 
 

@@ -55,6 +55,53 @@ html{
   cursor: pointer;
   display: none;
 }
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin: 0 15px;
+  padding: 3px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #1CB698;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
 /* SECCION I N I C I O */
 .inicio{
   background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
@@ -674,6 +721,206 @@ footer .arriba{
   border-radius: 50%;
   line-height: 50px;
   font-size: 18px;
+}
+
+/* LIGHT THEME */
+body.light-theme {
+  background-color: #e3f2fd; 
+  color: #2c3e50;
+}
+
+body.light-theme .contenedor-header {
+  background: #bbdefb;
+}
+
+body.light-theme .contenedor-header header .logo a {
+  color: #1CB698;
+}
+
+body.light-theme .contenedor-header header nav ul li a {
+  color: #2c3e50; 
+}
+
+body.light-theme .contenedor-header header nav ul li a:hover {
+  color: #1CB698;
+}
+
+body.light-theme .nav-responsive {
+  background-color: #1CB698;
+  color: #fff;
+}
+
+/* LIGHT THEME for Responsive Menu */
+body.light-theme nav.responsive {
+  background-color: #bbdefb; 
+}
+
+body.light-theme nav.responsive ul li {
+  border-bottom: 1px solid #2c3e50;
+}
+
+body.light-theme nav.responsive ul li a {
+  color: #2c3e50; 
+}
+
+/* Light Theme for Inicio */
+body.light-theme .inicio {
+  background: linear-gradient(to top, rgba(227, 242, 253, .8), rgba(227, 242, 253, 1)),
+  url(../img/fondo.jpg);
+  color: #2c3e50;
+}
+
+body.light-theme .inicio .contenido-banner {
+  background-color: #bbdefb;
+}
+
+body.light-theme .inicio .contenido-banner img {
+  border: 10px solid #1CB698;
+}
+
+body.light-theme .inicio .contenido-banner h1 {
+  color: #2c3e50;
+}
+
+body.light-theme .inicio .contenido-banner h2 {
+  color: #546e7a; 
+}
+
+body.light-theme .inicio .contenido-banner .redes a {
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+}
+
+body.light-theme .inicio .contenido-banner .redes a:hover {
+  background-color: #1CB698;
+}
+
+/* Light Theme for Sobre Mi */
+body.light-theme .sobremi {
+  background-color: #bbdefb;
+  color: #2c3e50;
+}
+
+body.light-theme .sobremi .contenido-seccion p span {
+  color: #1CB698;
+}
+
+body.light-theme .sobremi .fila .col ul li strong {
+  color: #1CB698;
+}
+
+body.light-theme .sobremi .fila .col ul li span {
+  background-color: #1CB698;
+}
+
+body.light-theme .sobremi .fila .col .contenedor-intereses .interes {
+  background-color: #90caf9; /* Un azul claro */
+}
+
+body.light-theme .sobremi .fila .col .contenedor-intereses .interes:hover {
+  background-color: #1CB698;
+}
+
+/* Light Theme for Skills */
+body.light-theme .skills {
+  background-color: #e3f2fd;
+  color: #2c3e50;
+}
+
+body.light-theme .skills .skill .barra-skill {
+  background-color: #90caf9;
+}
+
+body.light-theme .skills .skill .progreso {
+  background-color: #1CB698;
+}
+
+/* Light Theme for Curriculum */
+body.light-theme .curriculum {
+  background-color: #bbdefb;
+  color: #2c3e50;
+}
+
+body.light-theme .curriculum .fila .izquierda {
+  border-right: 2px solid #90caf9;
+}
+
+body.light-theme .curriculum .fila .derecha {
+  border-left: 2px solid #90caf9;
+}
+
+body.light-theme .curriculum .fila .item {
+  background-color: #90caf9;
+}
+
+body.light-theme .curriculum .fila .item .casa,
+body.light-theme .curriculum .fila .item .fecha {
+  color: #1CB698;
+}
+
+body.light-theme .curriculum .fila .item .conectori,
+body.light-theme .curriculum .fila .item .conectord {
+  background-color: #1CB698;
+}
+
+body.light-theme .curriculum .fila .item .conectori .circuloi,
+body.light-theme .curriculum .fila .item .conectord .circulod {
+  background-color: #1CB698;
+}
+
+/* Light Theme for Portfolio */
+body.light-theme .portfolio {
+  background-color: #e3f2fd;
+  color: #2c3e50;
+}
+
+body.light-theme .portfolio .proyecto {
+  background-color: #bbdefb;
+}
+
+body.light-theme .portfolio .proyecto .info h3 {
+  color: #1CB698;
+}
+
+body.light-theme .portfolio .proyecto:hover .info {
+  background-color: rgba(28, 182, 152, 0.1);
+}
+
+/* Light Theme for Contacto */
+body.light-theme .contacto {
+  background-image: url(img/contact_bg.png);
+  background-color: #bbdefb;
+  color: #2c3e50;
+}
+
+body.light-theme .contacto .col input,
+body.light-theme .contacto .col textarea {
+  background-color: #90caf9;
+  color: #2c3e50;
+}
+
+body.light-theme .contacto .col .info {
+  background-color: #90caf9;
+}
+
+body.light-theme .contacto .col .info ul li i {
+  color: #1CB698;
+}
+
+/* Light Theme for Footer */
+body.light-theme footer {
+  background-color: #90caf9;
+  color: #2c3e50;
+}
+
+body.light-theme footer .redes a {
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+}
+
+body.light-theme footer .arriba {
+  background-color: #1CB698;
+  color: #fff;
 }
 
 /* SECCION RESPONSIVE */
