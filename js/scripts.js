@@ -46,13 +46,10 @@ function toggleTheme() {
 }
 
 // Función para mostrar alerta de que el proyecto aún no esta disponible
-function showAlert(project) {
-    if (project === 'pokemon-game') {
-        alert("El proyecto aún en desarrollo. Disponible próximamente para descargar.\nRedirigiendo al repositorio de GitHub...");
-        
-    } else {
-        alert("El proyecto aún en desarrollo. Disponible próximamente...");
-    }
+function showAlert(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    alert("Descarga disponible próximamente...");  
 }
 
 
