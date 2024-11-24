@@ -45,11 +45,22 @@ function toggleTheme() {
     document.body.classList.toggle('light-theme');
 }
 
-// Función para mostrar alerta de que el proyecto aún no esta disponible
-function showAlert(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    alert("Descarga disponible próximamente...");  
+function handleDownload(event, project) {
+    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    event.stopPropagation(); // Detener la propagación del evento de clic
+
+    if (project === 'wild-quest') {
+        // Descargar el archivo WildQuest.zip
+        const link = document.createElement('a');
+        link.href = 'res/WildQuest.zip';
+        link.download = 'WildQuest.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    } else if (project === 'pokemon-game') {
+        // Mostrar alerta para el proyecto Pokémon Game
+        alert("Descarga disponible próximamente...");
+    }
 }
 
 
