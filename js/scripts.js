@@ -21,16 +21,16 @@ function efectoHabilidades(){
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
         let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("c");
+        habilidades[0].classList.add("python");
         habilidades[1].classList.add("cpp");
         habilidades[2].classList.add("java");
-        habilidades[3].classList.add("python");
-        habilidades[4].classList.add("mysql");
+        habilidades[3].classList.add("nodejs");
+        habilidades[4].classList.add("mongodb");
         habilidades[5].classList.add("comunicacion");
         habilidades[6].classList.add("trabajo");
         habilidades[7].classList.add("creatividad");
         habilidades[8].classList.add("dedicacion");
-        habilidades[9].classList.add("proyect");
+        habilidades[9].classList.add("project");
     }
 }
 

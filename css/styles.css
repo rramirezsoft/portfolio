@@ -322,11 +322,11 @@ input:checked + .slider:before {
   font-size: 14px;
 }
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .c{
+.skills .skill .python{
   width: 0%;
-  animation: 2s c forwards;
+  animation: 2s python forwards;
 }
-@keyframes c {
+@keyframes python {
   0%{width: 0%;}
   100%{width: 78%;}
 }
@@ -348,20 +348,20 @@ input:checked + .slider:before {
   100%{width: 99%;}
 }
 
-.skills .skill .python{
+.skills .skill .nodejs{
   width: 0%;
-  animation: 2s python forwards;
+  animation: 2s nodejs forwards;
 }
-@keyframes python {
+@keyframes nodejs {
   0%{width: 0%;}
   100%{width: 80%;}
 }
 
-.skills .skill .mysql{
+.skills .skill .mongodb{
   width: 0%;
-  animation: 2s mysql forwards;
+  animation: 2s mongodb forwards;
 }
-@keyframes mysql {
+@keyframes mongodb {
   0%{width: 0%;}
   100%{width: 75%;}
 }
@@ -402,11 +402,11 @@ input:checked + .slider:before {
   100%{width: 82%;}
 }
 
-.skills .skill .proyect{
+.skills .skill .project{
   width: 0%;
-  animation: 2s proyect forwards;
+  animation: 2s project forwards;
 }
-@keyframes proyect {
+@keyframes project {
   0%{width: 0%;}
   100%{width: 96%;}
 }
