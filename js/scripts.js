@@ -60,6 +60,9 @@ function handleDownload(event, project) {
     } else if (project === 'pokemon-game') {
         // Mostrar alerta para el proyecto Pokémon Game
         alert("Descarga disponible próximamente...");
+    } else if (project == 'poker-mind'){
+        // Redirigimos al enlace para ejecutar el notebook de Anáisis de datos
+        window.open('https://hub.ovh2.mybinder.org/user/rramirezsoft-poker-mind-7ijeh6zd/doc/tree/data_analysis.ipynb')
     }
 }
 
