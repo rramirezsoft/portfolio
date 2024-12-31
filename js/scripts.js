@@ -62,7 +62,7 @@ function handleDownload(event, project) {
         alert("Descarga disponible próximamente...");
     } else if (project == 'poker-mind'){
         // Redirigimos al enlace para ejecutar el notebook de Anáisis de datos
-        window.open('https://hub.ovh2.mybinder.org/user/rramirezsoft-poker-mind-7ijeh6zd/doc/tree/data_analysis.ipynb')
+        window.open('https://mybinder.org/v2/gh/rramirezsoft/poker-mind/master?filepath=data_analysis.ipynb')
     }
 }
 
