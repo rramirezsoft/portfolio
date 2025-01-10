@@ -46,25 +46,27 @@ function toggleTheme() {
 }
 
 function handleDownload(event, project) {
-    event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-    event.stopPropagation(); // Detener la propagación del evento de clic
+    event.preventDefault(); 
+    event.stopPropagation();
 
     if (project === 'wild-quest') {
-        // Descargar el archivo WildQuest.zip
-        const link = document.createElement('a');
-        link.href = 'res/WildQuest.zip';
-        link.download = 'WildQuest.zip';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        downloadFile('res/WildQuest.zip', 'WildQuest.zip');
     } else if (project === 'pokemon-game') {
-        // Mostrar alerta para el proyecto Pokémon Game
         alert("Descarga disponible próximamente...");
-    } else if (project == 'poker-mind'){
-        // Redirigimos al enlace para ejecutar el notebook de Anáisis de datos
-        window.open('https://mybinder.org/v2/gh/rramirezsoft/poker-mind/master?filepath=data_analysis.ipynb')
+    } else if (project === 'poker-mind') {
+        downloadFile('res/PokerMind.zip', 'PokerMind.zip');
     }
 }
+
+function downloadFile(url, filename) {
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 
 
 
