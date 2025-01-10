@@ -54,7 +54,7 @@ function handleDownload(event, project) {
     } else if (project === 'pokemon-game') {
         alert("Descarga disponible próximamente...");
     } else if (project === 'poker-mind') {
-        downloadFile('res/PokerMind.zip', 'PokerMind.zip');
+        downloadFile('https://github.com/rramirezsoft/portfolio/raw/gh-pages/res/PokerMind.zip', 'PokerMind.zip');
     }
 }
 
