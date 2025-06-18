@@ -51,7 +51,7 @@ function handleDownload(event, project) {
 
     if (project === 'wild-quest') {
         downloadFile('res/WildQuest.zip', 'WildQuest.zip');
-    } else if (project === 'pokemon-game') {
+    } else if (project === 'pokemon-game' || project === 'geovibes') {
         alert("Descarga disponible próximamente...");
     } else if (project === 'poker-mind') {
         downloadFile('https://github.com/rramirezsoft/portfolio/raw/gh-pages/res/PokerMind.zip', 'PokerMind.zip');
